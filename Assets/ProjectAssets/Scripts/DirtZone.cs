@@ -8,6 +8,7 @@ public class DirtZone : MonoBehaviour
 
     public void UpdateMuddyState(WeatherType weather)
     {
+        Debug.Log(weather == WeatherType.Rain);
         if(weather == WeatherType.Rain)
         {
             isMuddy = true;

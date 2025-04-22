@@ -28,6 +28,7 @@ public class WeatherManager : MonoBehaviour
         while (true)
         {
             SetRandomWeather();
+            OnWeatherChange?.Invoke(currentWeather);
             yield return new WaitForSeconds(time);
         }
     }
